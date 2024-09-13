@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Shareable resume bulider</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Shareable Resume Builder</h1>
+        <form action="" id="resume">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="username">Username:</label>
+                <input type="text" placeholder="Enter your username" id="username" required>
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Enter your name" id="name" required>
+
+             
+            
+                <label for="Email">Email:</label>
+                <input type="email" placeholder="abc@gmail.com" id="email" required>
+                <label for="Phone">Phone:</label>
+                <input type="number" placeholder="Enter your phone number" id="phone" required>
+                <!-- <input type="file" name="" id="file" required> -->
+            </fieldset>
+            <fieldset>
+                <legend>Education</legend>
+                <label for="skills">Education:</label>
+                <textarea placeholder="Enter Your Education here" id="education" cols="30" rows="10" required></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Experience</legend>
+                <label for="skills">Skills:</label>
+                <textarea placeholder="Enter your work experience here" id="experience" cols="30" rows="10" required></textarea>
+                <label for="from">From:</label>
+                <select name="" id="from" required>
+                    <option id="year">1995</option>
+                    <option id="year">1996</option>
+                    <option id="year">1997</option>
+                    <option id="year">1998</option>
+                    <option id="year">1999</option>
+                    <option id="year">2000</option>
+                    <option id="year">2001</option>
+                    <option id="year">2002</option>
+                    <option id="year">2003</option>
+                    <option id="year">2004</option>
+                    <option id="year">2005</option>
+                    <option id="year">2006</option>
+                    <option id="year">2007</option>
+                    <option id="year">2008</option>
+                    <option id="year">2009</option>
+                    <option id="year">2010</option>
+                    <option id="year">2011</option>
+                    <option id="year">2012</option>
+                    <option id="year">2013</option>
+                    <option id="year">2014</option>
+                    <option id="year">2015</option>
+                    <option id="year">2016</option>
+                    <option id="year">2017</option>
+                    <option id="year">2018</option>
+                    <option id="year">2019</option>
+                    <option id="year">2020</option>
+                    <option id="year">2021</option>
+                    <option id="year">2022</option>
+                    <option id="year">2023</option>
+                    <option id="year">2024</option>
+                </select>
+                <label for="from">To:</label>
+                <select name="" id="to" required>
+                    <option id="year">1995</option>
+                    <option id="year">1996</option>
+                    <option id="year">1997</option>
+                    <option id="year">1998</option>
+                    <option id="year">1999</option>
+                    <option id="year">2000</option>
+                    <option id="year">2001</option>
+                    <option id="year">2002</option>
+                    <option id="year">2003</option>
+                    <option id="year">2004</option>
+                    <option id="year">2005</option>
+                    <option id="year">2006</option>
+                    <option id="year">2007</option>
+                    <option id="year">2008</option>
+                    <option id="year">2009</option>
+                    <option id="year">2010</option>
+                    <option id="year">2011</option>
+                    <option id="year">2012</option>
+                    <option id="year">2013</option>
+                    <option id="year">2014</option>
+                    <option id="year">2015</option>
+                    <option id="year">2016</option>
+                    <option id="year">2017</option>
+                    <option id="year">2018</option>
+                    <option id="year">2019</option>
+                    <option id="year">2020</option>
+                    <option id="year">2021</option>
+                    <option id="year">2022</option>
+                    <option id="year">2023</option>
+                    <option id="year">2024</option>
+                    <option id="year">continue</option>
+
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Skills</legend>
+                <label for="skills">Skills:</label>
+                <textarea placeholder="Enter skills here" id="skills" cols="30" rows="10" required></textarea>
+            </fieldset>
+            <button type="submit" id="btn"> Generate Resume</button>
+        </form>
+    </div>
+    <br>
+    <!-- Dynamic and editable resume -->
+        <div id="resume-display" contenteditable="true">
+
+
+        </div>
+        <br>
+
+        <!-- Section for the shareable link and download option -->
+
+        <div id="shareable-link-container" style = "display:none;">
+            <h2>Shareable Link</h2>
+            <p>Here is your unique link to view or edit your resume</p>
+            <a href = "#" id="shareable-link" target = "_blank"></a>
+            <br>
+            <button id="download-pdf"><b></b>Download as Pdf</b></button>
+        </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
